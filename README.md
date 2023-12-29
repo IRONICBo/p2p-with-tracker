@@ -31,9 +31,22 @@ To run the cargo project, follow these steps:
     ```
 
 4. Run the project:
-
+    Start test MinIO server as S3 object storage server
     ```bash
+    cd p2p-with-tracker/deploy
+    docker-compose up -d
+    ```
+
+    Start tracker server
+    ```bash
+    # Run with tracker
     cargo run
+    ```
+    
+    Start node server
+    ```bash
+    # Run with node
+    cargo run -- -m node
     ```
 
 That's it! You have successfully run the client project.
