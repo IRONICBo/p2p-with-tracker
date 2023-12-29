@@ -1,5 +1,6 @@
-# p2p-with-tracker
-Accelerating S3 Object reads from multiple online nodes using p2p
+## Running a p2p-with-tracker client project
+
+This README provides documentation on how to run a client project.
 
 ### Prerequisites
 
