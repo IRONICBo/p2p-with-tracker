@@ -57,6 +57,7 @@ mod tests {
     use super::*;
 
     #[tokio::test]
+    #[ignore]
     async fn test_report() {
         let client = PieceClient::new("127.0.0.1:48349");
 

@@ -55,6 +55,7 @@ mod tests {
     use super::*;
 
     #[tokio::test]
+    #[ignore]
     async fn test_heart_beat() {
         let client = SessionClient::new("127.0.0.1", 38080);
 

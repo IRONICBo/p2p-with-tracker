@@ -54,6 +54,7 @@ mod tests {
     use super::*;
 
     #[tokio::test]
+    #[ignore]
     async fn test_node_list() {
         let client = NodeClient::new("127.0.0.1", 38080);
 

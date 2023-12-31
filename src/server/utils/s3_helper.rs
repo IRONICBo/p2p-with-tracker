@@ -119,6 +119,7 @@ mod tests {
     use super::*;
 
     #[tokio::test]
+    #[ignore]
     async fn test_get_object_metadata() {
         let endpoint = "http://127.0.0.1:39000";
         let bucket = "hackathon";
@@ -141,6 +142,7 @@ mod tests {
     }
 
     #[tokio::test]
+    #[ignore]
     async fn test_get_object_range_data() {
         let endpoint = "http://127.0.0.1:39000";
         let bucket = "hackathon";

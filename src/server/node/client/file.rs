@@ -98,6 +98,7 @@ mod tests {
     use super::*;
 
     #[tokio::test]
+    #[ignore]
     async fn test_report() {
         let client = FileClient::new("127.0.0.1", 38080);
 
@@ -114,6 +115,7 @@ mod tests {
     }
 
     #[tokio::test]
+    #[ignore]
     async fn test_fetch_seed() {
         let client = FileClient::new("127.0.0.1", 38080);
 
