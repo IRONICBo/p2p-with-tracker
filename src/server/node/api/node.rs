@@ -50,7 +50,7 @@ pub async fn start_download(
     {
         // Async in release mode
         tokio::spawn(async move {
-            file::download(&request.filename.as_str()).await.unwrap();
+            file::download(config, &request.filename.as_str()).await.unwrap();
         });
     }
 

@@ -8,7 +8,7 @@ use crate::server::error::*;
 use crate::server::store::PIECE_CACHE;
 
 pub async fn fetch_piece(
-    Extension(config): Extension<Config>,
+    Extension(_config): Extension<Config>,
     Json(request): Json<FetchPieceRequest>,
 ) -> Result<Json<FetchPieceResponse>> {
     debug!(
